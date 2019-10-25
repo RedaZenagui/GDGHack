@@ -19,7 +19,7 @@ app.use('/user',userRouter);
 app.use('/place',placeRouter);
 
 // Connect to Mongoose and set connection variable
-mongoose.connect('mongodb://localhost/YassirSquareDB', { useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/GDGHack', { useNewUrlParser: true});
 var db = mongoose.connection;
 
 // Added check for DB connection

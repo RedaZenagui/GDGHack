@@ -5,12 +5,10 @@ let placeRouter = require('express').Router();
 // Import contact controller
 var placeController = require('../controllers/placeController');
 // Place routes
-placeRouter.get('/',placeController.showPublic)
-placeRouter.post('/makePublic',placeController.modifyVisibility)   
 placeRouter.post('/update',placeController.upDate) 
-
-//placeRouter.get('/:placeId',placeController.view)
+placeRouter.post('/addPlaceReview',placeController.addPlaceReview)
+placeRouter.get('/getPlaceReviews',placeController.getPlaceReviews)
 //placeRouter.put('/:placeId',placeController.update)
-//placeRouter.delete('/:placeId',placeController.delete)
+placeRouter.delete('/deleteReview',placeController.deleteReview)
 
 module.exports = placeRouter;
