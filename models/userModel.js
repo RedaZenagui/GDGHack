@@ -22,7 +22,7 @@ var userSchema = mongoose.Schema({
         {
         place :{
             type :mongoose.Schema.Types.ObjectID ,
-            ref : 'Places',
+            ref : 'places',
         },
     }],    
 });
