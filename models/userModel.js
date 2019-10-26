@@ -29,4 +29,3 @@ var userSchema = mongoose.Schema({
 // Export Contact model
 var User = module.exports = mongoose.model('Users', userSchema);
 //Add user picture
-//Favotite Places

@@ -13,16 +13,22 @@ var placeReviewSchema = mongoose.Schema({
             type : Date,
             default : Date.now
             },
+            categorie : {
+                categName : String,
+                accessibleSinks : Boolean,
+                menuWithBS : Boolean,
+                guideDogsA : Boolean,
+                largePrintM : Boolean,
+                accessibleT : Boolean,
+                offeredAssistance : Boolean,
+                autoEasyDoors : Boolean,
+            },
             rate : Number,
             user :{
                 type :mongoose.Schema.Types.ObjectID ,
                 ref : 'Users',
             },
-            comment :
-                {
-                    text : String,
-                }
-
+            comment : String,
         }
     ],
     
