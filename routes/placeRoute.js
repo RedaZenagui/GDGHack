@@ -8,6 +8,7 @@ var placeController = require('../controllers/placeController');
 placeRouter.post('/update',placeController.upDate) 
 placeRouter.post('/addPlaceReview',placeController.addPlaceReview)
 placeRouter.get('/getPlaceReviews',placeController.getPlaceReviews)
+placeRouter.get('/categorieReviews',placeController.categorieReviews)
 //placeRouter.put('/:placeId',placeController.update)
 placeRouter.delete('/deleteReview',placeController.deleteReview)
 
